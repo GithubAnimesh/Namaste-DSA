@@ -12,3 +12,9 @@ function pattern1NxN(n) {
 }
 
 pattern1NxN(4);
+
+// output
+// ****
+// ****
+// ****
+// ****

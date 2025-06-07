@@ -15,20 +15,19 @@ Pattern3(4);
 
 //OR
 
-function Pattern3(n) {
+function Pattern2(n) {
   for (let i = 0; i < n; i++) {
     let num = "";
-    for (let j = 0; j <= i; j++) {
-      num += j + 1;
+    for (let j = 0; j < i + 1; j++) {
+      num += "*";
     }
     console.log(num);
   }
 }
-
-Pattern3(4);
+Pattern2(4);
 
 //Output
-// 1
-// 12
-// 123
-// 1234
+// *
+// **
+// ***
+// ****
