@@ -78,6 +78,8 @@ function delAtIndex(index) {
   if (index < 0 || index >= this.size) return;
   if (index === 0) {
     this.head = this.head.next;
+    this.size--;
+    return;
   } else {
     let cur = this.head;
     for (let i = 0; i < index - 1; i++) {
@@ -195,7 +197,7 @@ function addAtIndex(index, val) {
     this.addAtTail(val);
     return;
   } else {
-    let next = this.head;
+    let cur = this.head;
     for (let i = 0; i < index - 1; i++) {
       cur = cur.next;
     }
